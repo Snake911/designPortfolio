@@ -9,8 +9,10 @@
   background-color: var(--color-primary);
   color: var(--color-white);
   position: fixed;
+  top: 0;
   right: -100vw;
   width: 100vw;
+  height: 100vh;
 }
 
 .burger_content.active {
@@ -26,7 +28,7 @@
 }
 
 .burger_logo img {
-  height: 32px;
+  height: 60px;
   width: 100%;
   display: block;
   object-fit: contain;
@@ -73,10 +75,6 @@
 }
 /* /Burger */
 /* Header */
-.header_logo img {
-  height: 32px;
-}
-
 .header_menu {
   display: none;
 }
