@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UX/UI дизайнер</title>
   <link rel="icon" href="./images/icons/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="./fonts/Stolzl-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/Stolzl-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Manrope-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./styles/style.css">
@@ -46,20 +46,42 @@
     </div>
   </div>
   <header class="limiter">
-    <div class="header_logo">
-      <img src="./images/icons/logo_dark.svg" alt="logotype">
-    </div>
-    <nav>
-      <ul class="header_menu">
-        <li><a href="#projects">Портфолио</a></li>
-        <li><a href="#about">Обо мне</a></li>
-        <li><a href="#">Резюме</a></li>
-        <li><a href="#contacts">Контакты</a></li>
-      </ul>
-    </nav>
-    <button class="header_burger"></button>
+   <div class="container">
+      <div class="header_logo">
+        <img src="./images/icons/logo_dark.svg" alt="logotype">
+      </div>
+      <nav class="header_nav">
+        <ul class="header_menu">
+          <li><a href="#projects">Портфолио</a></li>
+          <li><a href="#">Опыт</a></li>
+          <li><a href="#about">Обо мне</a></li>          
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="header_burger"></button>
+   </div>    
   </header>
-  <main></main>
+  <main class="main_page limiter">
+    <section class="main_screen">
+      <h1>Проектирую понятные<br> и эстетичные интерфейсы</h1>
+      <div class="main_info container">
+        <div class="main_info-left">
+          <div class="main_info-row">
+            Опыт: 4 года
+          </div>
+          <div class="main_info-row">
+            Город: Москва
+          </div>
+        </div>
+        <div class="main_info-right">
+          <div class="main_photo">
+            <img src="images/main_photo.jpg" alt="">
+          </div>
+          <h3>UX/UI дизайнер</h3>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer></footer>
 </body>
 </html>
