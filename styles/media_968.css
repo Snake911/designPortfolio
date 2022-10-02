@@ -75,7 +75,11 @@
 }
 /* /Burger */
 /* Header */
-.header_menu {
+.header_logo {
+  grid-column: 1 / -2;
+}
+
+.header_nav {
   display: none;
 }
 
@@ -86,5 +90,7 @@
   background: url('../images/icons/burger.svg') no-repeat center/contain transparent;
   border: none;
   cursor: pointer;
+  grid-column: -2 / -1;
+  justify-self: end;
 }
 /* /Header */

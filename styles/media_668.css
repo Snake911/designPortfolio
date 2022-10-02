@@ -10,6 +10,10 @@ h3 {
   font-size: 18px;
 }
 
+section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
 
 /* Burger */
 .burger_logo img {
@@ -25,7 +29,24 @@ h3 {
 
 /* Main page */
 .main_page h1 {
-  padding: 64px 0 40px;
+  padding: 48px 0 40px;
+}
+
+.main_info {
+  gap: 40px;
+}
+
+.main_info-left,
+.main_info-right {
+  grid-column: 1 / -1;
+}
+
+.main_info-left {
+  order: 1;
+}
+
+.main_photo {
+  margin-right: 16px;
 }
 /* /Main page */
 
