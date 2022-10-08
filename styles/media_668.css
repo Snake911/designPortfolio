@@ -49,6 +49,15 @@ section {
   margin-right: 16px;
 }
 /* /Main page */
+/* Projects */
+.projects_left h2 {
+  margin-bottom: 16px;
+}
+
+.project_item > img {
+  height: 220px;
+}
+/* /Projects */
 
 /* Footer */
 .contact_phone {

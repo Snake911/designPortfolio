@@ -1,3 +1,9 @@
 .header_menu {
   gap: 45px;
 }
+
+/* Projects */
+.project_item > img {
+  height: 600px;
+}
+/* /Projects */

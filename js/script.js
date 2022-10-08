@@ -16,5 +16,36 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       menu.style.transition = '';
     }, 300);
-  })
+  });
+
+  const projectSlider = document.getElementById('project_slider');
+  if(projectSlider) {
+    tns({
+      container: '#project_slider',
+      items: 1,
+      slideBy: 1,
+      nav: false,
+      controlsContainer: '.project_slider-nav',
+      loop: false,
+      // mouseDrag: true,
+    });
+  }
+
+  //Переносим стрелки в конец блока проекты
+  if(window.outerWidth < 968) {
+    const sliderNav = document.querySelector('.project_slider-nav');
+    sliderNav.before(document.querySelector('.projects_right'));
+  } else {
+    const projectLeft = document.querySelector('.projects_left');
+    projectLeft.after(document.querySelector('.projects_right'))
+  }
+  window.addEventListener('resize', function() {
+    if(window.outerWidth < 968) {
+      const sliderNav = document.querySelector('.project_slider-nav');
+      sliderNav.before(document.querySelector('.projects_right'));
+    } else {
+      const projectLeft = document.querySelector('.projects_left');
+      projectLeft.after(document.querySelector('.projects_right'))
+    }
+  });
 });

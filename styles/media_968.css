@@ -94,3 +94,17 @@
   justify-self: end;
 }
 /* /Header */
+/* Projects */
+.projects_left,
+.projects_right {
+  grid-column: 1 / -1;
+}
+
+.project_slider-nav {
+  padding-bottom: 0px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+/* /Projects */
