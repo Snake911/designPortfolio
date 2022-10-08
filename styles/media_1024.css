@@ -49,6 +49,10 @@ section {
 }
 /* /Main page */
 /* Projects */
+.experience_list {
+  margin-top: 64px;
+}
+
 .projects_left h2 {
   margin-bottom: 64px;
 }

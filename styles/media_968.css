@@ -108,3 +108,23 @@
   margin-top: 40px;
 }
 /* /Projects */
+/* Experience */
+.experience_list {
+  margin-top: 40px;
+}
+
+.experience_item:not(:last-child) {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dedede;
+}
+
+.experience_left {
+  grid-column: 1 / -1;
+}
+
+.experience_right {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+}
+
+/* /Experience */
