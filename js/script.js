@@ -48,4 +48,34 @@ document.addEventListener('DOMContentLoaded', () => {
       projectLeft.after(document.querySelector('.projects_right'))
     }
   });
+
+  //Скрываем/показываем больше 4 элементов в блоке Обучение
+  function hideTraining() {
+    const trainingElements = document.querySelectorAll('.training_item');
+    const trainingMore = document.querySelector('.training_more');
+    const trainingHide = document.querySelector('.training_hide');
+    if(trainingElements.length > 4) {
+      trainingElements.forEach(function(element, index) {
+        if(index > 3) {
+          element.classList.add('hidden');
+        }
+      });
+      trainingMore.classList.remove('hidden');
+      trainingHide.classList.add('hidden');
+      trainingMore.addEventListener('click', showTraining);
+    }    
+  }
+  hideTraining();
+
+  function showTraining() {
+    const trainingElements = document.querySelectorAll('.training_item');
+    const trainingMore = document.querySelector('.training_more');
+    const trainingHide = document.querySelector('.training_hide');
+    trainingElements.forEach(function(element, index) {      
+      element.classList.remove('hidden');      
+    });
+    trainingHide.classList.remove('hidden');
+    trainingMore.classList.add('hidden');
+    trainingHide.addEventListener('click', hideTraining);
+  }
 });
