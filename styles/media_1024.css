@@ -58,6 +58,11 @@ section {
   height: 406px;
 }
 /* /Projects */
+/* Trainings */
+.training_img {
+  margin-left: 16px;
+}
+/* /Trainings */
 /* Foooter */
 .contact_phone {
   font-size: 2.5rem;

@@ -148,3 +148,31 @@
   grid-column: 2 / -1;
 }
 /* /Marathons */
+/* Trainings */
+.training_list {
+  gap: 40px;
+}
+
+.training_item {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dedede;
+}
+
+.training_left,
+.training_right {
+  grid-column: 1 / -1;
+}
+
+.training_right {
+  margin-top: 32px;
+}
+
+.training_img {
+  display: none;
+}
+
+.training_more, 
+.training_hide {
+  margin: 40px 0px 0px;
+}
+/* /Trainings */

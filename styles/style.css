@@ -255,19 +255,22 @@ header {
   display: flex;
 }
 
+.training_left h3 {
+  margin-bottom: 16px;
+}
+
 .training_img {
   display: block;
   margin-left: 40px;
   overflow: hidden;
-  max-width: 0px;
-  height: 100%;
+  opacity: 0;
   object-fit: cover;
+  width: max-content;
   transition: all .5s ease;
 }
 
 .training_item:hover .training_img {
-  width: auto;
-  max-width: 376px;
+  opacity: 1;
 }
 
 .training_right {
