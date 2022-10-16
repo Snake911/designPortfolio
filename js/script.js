@@ -77,5 +77,22 @@ document.addEventListener('DOMContentLoaded', () => {
     trainingHide.classList.remove('hidden');
     trainingMore.classList.add('hidden');
     trainingHide.addEventListener('click', hideTraining);
-  }
+  } 
 });
+
+window.addEventListener('load', function() {
+  const brandbookContainer = document.querySelector('.brandbook_container');
+  const brandbookContainerHeight = brandbookContainer.getBoundingClientRect().height;
+  const brandbook = brandbookContainer.querySelector('img');
+  const brandbookHeight = brandbook.getBoundingClientRect().height;
+
+  let top = 0;
+  setInterval(() => {
+    if(top + brandbookContainerHeight < brandbookHeight) {
+      brandbook.style.top = `-${top += 100}px`;
+    } else {}
+    
+  }, 300);
+  
+  console.log(brandbookContainerHeight, brandbookHeight);
+})

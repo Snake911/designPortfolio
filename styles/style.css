@@ -326,6 +326,21 @@ header {
 }
 /* /Polygraphy */
 
+/* Brandbook*/
+.brandbook_container {
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+}
+
+.brandbook_container img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  position: relative;
+  transition: all .3s linear;
+}
+/* /Brandbook*/
+
 /* Footer */
 .contact_phone {
   font-size: 2.4rem;
