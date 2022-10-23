@@ -173,7 +173,9 @@
 
 .training_more, 
 .training_hide {
-  margin: 40px 0px 0px;
+  margin-top: 40px;
+  grid-column: 2;
+  text-align: center;
 }
 /* /Trainings */
 /* Logotypes */
