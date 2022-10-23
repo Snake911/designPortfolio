@@ -358,6 +358,30 @@ header {
 }
 /* /Brandbook*/
 
+/* About */
+.about_left {
+  grid-column: 1 / 3;
+}
+
+.about_right {
+  grid-column: 3 / -1;
+}
+
+.about_right img {
+  display: block;
+  width: 100%;
+}
+
+.about_right h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about_right p:not(:last-child) {
+  margin-bottom: 24px;
+}
+/* /About */
+
 /* Footer */
 .contact_phone {
   font-size: 2.4rem;
