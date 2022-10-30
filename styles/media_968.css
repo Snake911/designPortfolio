@@ -237,3 +237,11 @@
   min-width: 300px;
 }
 /* /Reviews */
+/* Short */
+.short_left {
+  display: none;
+}
+.short_right {
+  grid-column: 1 / -1;
+}
+/* /Short */
