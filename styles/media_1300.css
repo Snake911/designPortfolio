@@ -7,3 +7,8 @@
   height: 600px;
 }
 /* /Projects */
+/* Reviews */
+.reviews_item {
+  min-width: 363px;
+}
+/* /Reviews */

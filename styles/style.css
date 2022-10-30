@@ -381,6 +381,57 @@ header {
   margin-bottom: 24px;
 }
 /* /About */
+/* Reviews */
+.hgroup h2 {
+  margin-bottom: 16px;
+}
+
+.hgroup {
+ margin-bottom: 40px;
+}
+
+.reviews_list {
+  display: flex;
+  gap: 32px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.reviews_list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.reviews_item {
+  min-width: 685px;
+  aspect-ratio: 1 / 1;
+  background-color: #EFEFEF;
+  position: relative;
+  cursor: pointer;
+}
+
+.reviews_item:not(.played)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 32%;
+  height: 32%;
+  transform: translate(-50%, -50%);
+  background: url('/images/icons/play.svg') no-repeat center/contain transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 80px #0000007a;
+}
+
+.reviews_item video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* /Reviews */
 
 /* Footer */
 .contact_phone {

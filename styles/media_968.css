@@ -232,3 +232,8 @@
   margin-bottom: 16px;
 }
 /* /About */
+/* Reviews */
+.reviews_item {
+  min-width: 300px;
+}
+/* /Reviews */
