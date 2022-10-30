@@ -453,6 +453,13 @@ header {
 }
 /* /Short */
 /* Footer */
+footer {
+  background-color: var(--color-primary);
+  padding-top: 160px;
+  padding-bottom: 160px;
+  color: var(--color-white);
+} 
+
 .contact_phone {
   font-size: 2.4rem;
 }
