@@ -7,21 +7,22 @@
   <title>UX/UI дизайнер</title>
   <link rel="icon" href="./images/icons/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./styles/tiny-slider.css">
+  <link rel="stylesheet" href="./styles/aos.css">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/media_1300.css" media="only screen and (max-width: 1300px)">
   <link rel="stylesheet" href="./styles/media_1024.css" media="only screen and (max-width: 1024px)">
   <link rel="stylesheet" href="./styles/media_968.css" media="only screen and (max-width: 968px)">
-  <link rel="stylesheet" href="./styles/media_668.css" media="only screen and (max-width: 668px)">
-  <link rel="stylesheet" href="./styles/tiny-slider.css">
+  <link rel="stylesheet" href="./styles/media_668.css" media="only screen and (max-width: 668px)">  
   <script src="./js/tiny-slider.js"></script>
-  <script src="./js/dragscroll.js"></script>
+  <script src="./js/aos.js"></script>
   <script src="./js/script.js"></script>  
 </head>
 <body>
   <div class="burger_content limiter">
     <div class="burger_header">
       <div class="burger_logo">
-        <img src=".images/icons/logo_light.svg" alt="logotype">
+        <img src="./images/icons/logo_light.svg" alt="logotype">
       </div>
       <button class="burger_close"></button>
     </div>
@@ -64,21 +65,13 @@
   </header>
   <main class="main_page limiter">
     <section class="main_screen">
-      <h1>Проектирую понятные<br> и эстетичные интерфейсы</h1>
-      <div class="main_info container">
-        <div class="main_info-left">
-          <div class="main_info-row">
-            Опыт: 4 года
-          </div>
-          <div class="main_info-row">
-            Город: Москва
-          </div>
-        </div>
-        <div class="main_info-right">
-          <div class="main_photo">
-            <img src="images/main_photo.jpg" alt="">
-          </div>
-          <h3>UX/UI дизайнер</h3>
+      <h1 data-aos="fade-up-20" data-aos-duration="700">Проектирую понятные<br> и эстетичные интерфейсы</h1>
+      <div class="container">
+        <div class="short_left"></div>
+        <div class="short_right">
+          <img src="./images/short.jpg" alt="Какое-то описание" data-aos="fade-up-20" data-aos-duration="700" data-aos-delay="100">
+          <h2 data-aos="fade-up-20" data-aos-duration="700" data-aos-delay="200">Если коротко, то разработаю продукт с нуля: от идеи<br> до конечной упаковки</h2>
+          <p data-aos="fade-up-20" data-aos-duration="700" data-aos-delay="300">Проведу исследование, разработаю структуру и визуал на разных носителях, помогу с текстом, подготовлю к фотосъёмке, подготовлю макеты для печати и для разработчиков.</p>
         </div>
       </div>
     </section>
@@ -86,8 +79,8 @@
       <div class="container">
         <div class="projects_left">
           <div class="projects_heading">
-            <h2>Мои проекты</h2>
-            <a href="/projects/">Все проекты</a>
+            <h2 data-aos="fade-up-20" data-aos-duration="700">Мои проекты</h2>
+            <a data-aos="fade-up-20" data-aos-duration="700" data-aos-delay="100" href="/projects/">Все проекты</a>
           </div>
           <div class="project_slider-nav">
             <button>
@@ -105,30 +98,30 @@
         <div class="projects_right">
           <div class="project_slider" id="project_slider">
             <div class="project_item">
-              <img src="images/main_project_1.jpg" alt="project name">
-              <h3>Название проекта</h3>
+              <img src="images/main_project_1.jpg" alt="Приложение для планирования времени">
+              <h3>Приложение для планирования времени</h3>
               <div class="project_tags">
-                <div class="project_tag">#теги</div>
-                <div class="project_tag">#теги</div>
-                <div class="project_tag">#теги</div>
+                <div class="project_tag">#исследование</div>
+                <div class="project_tag">#UX</div>
+                <div class="project_tag">#UI</div>
               </div>
             </div>
             <div class="project_item">
-              <img src="images/main_project_1.jpg" alt="project name">
-              <h3>Название проекта</h3>
+              <img src="images/main_project_1.jpg" alt="Приложение для планирования времени">
+              <h3>Приложение для планирования времени</h3>
               <div class="project_tags">
-                <div class="project_tag">#теги</div>
-                <div class="project_tag">#теги</div>
-                <div class="project_tag">#теги</div>
+                <div class="project_tag">#исследование</div>
+                <div class="project_tag">#UX</div>
+                <div class="project_tag">#UI</div>
               </div>
             </div>
             <div class="project_item">
-              <img src="images/main_project_1.jpg" alt="project name">
-              <h3>Название проекта</h3>
+              <img src="images/main_project_1.jpg" alt="Приложение для планирования времени">
+              <h3>Приложение для планирования времени</h3>
               <div class="project_tags">
-                <div class="project_tag">#теги</div>
-                <div class="project_tag">#теги</div>
-                <div class="project_tag">#теги</div>
+                <div class="project_tag">#исследование</div>
+                <div class="project_tag">#UX</div>
+                <div class="project_tag">#UI</div>
               </div>
             </div>
           </div>
@@ -136,9 +129,9 @@
       </div>
     </section>
     <section class="experience">
-      <h2>Опыт</h2>
+      <h2 data-aos="fade-up-20" data-aos-duration="700">Опыт</h2>
       <div class="experience_list">
-        <div class="experience_item container">
+        <div class="experience_item container" data-aos="fade-up-20" data-aos-duration="700">
           <div class="experience_left">
             <h3>Digital web</h3>
             <p>Март 2020 — ноябрь 2022</p>
@@ -147,7 +140,7 @@
             <h3>Веб-дизайнер, UX/UI</h3>
           </div>
         </div>
-        <div class="experience_item container">
+        <div class="experience_item container" data-aos="fade-up-20" data-aos-duration="700">
           <div class="experience_left">
             <h3>Фриланс</h3>
             <p>Октябрь 2018 — настоящее время</p>
@@ -159,21 +152,21 @@
       </div>
     </section>
     <section class="marathons">
-      <h2>Участие в марафонах</h2>
+      <h2 data-aos="fade-up-20" data-aos-duration="700">Участие в марафонах</h2>
       <div class="marathons_list">
         <div class="marathons_item container">
           <div class="marathons_left"></div>
-          <div class="marathons_right"><img src="images/marathon_1.jpg" alt="Название марафона"></div>
+          <div class="marathons_right" data-aos="fade-up" data-aos-duration="700"><img src="images/marathon_1.jpg" alt="Название марафона"></div>
         </div>
         <div class="marathons_item container">
-          <div class="marathons_left"><img src="images/marathon_2.jpg" alt="Название марафона"></div>
+          <div class="marathons_left" data-aos="fade-up" data-aos-duration="700"><img src="images/marathon_2.jpg" alt="Название марафона"></div>
           <div class="marathons_right"></div>
         </div>
       </div>
     </section>
     <section class="training">
-      <h2>Обучение и навыки</h2>
-      <div class="training_list">
+      <h2 data-aos="fade-up" data-aos-duration="700">Обучение и навыки</h2>
+      <div class="training_list" data-aos="fade-up" data-aos-duration="700">
         <div class="training_item container">
           <div class="training_left">
             <div class="training_head">
@@ -279,22 +272,22 @@
       </div>
     </section>
     <section class="logotypes">
-      <p class="h3 also">А ещё я</p>
-      <h2>Создаю логотипы</h2>
+      <p class="h3 also" data-aos="fade-up" data-aos-duration="700">А ещё я</p>
+      <h2 data-aos="fade-up" data-aos-duration="700">Создаю логотипы</h2>
       <div class="logotypes_list">
-        <div class="logotypes_item container">
+        <div class="logotypes_item container" data-aos="fade-up" data-aos-duration="700">
           <div class="logotypes_left">
             <img src="images/logotype_1.jpg" alt="Название логотипа">
           </div>
           <div class="logotypes_right"></div>
         </div>
-        <div class="logotypes_item container">
+        <div class="logotypes_item container" data-aos="fade-up" data-aos-duration="700">
           <div class="logotypes_left"></div>
           <div class="logotypes_right">
             <img src="images/logotype_2.jpg" alt="Название логотипа">
           </div>
         </div>
-        <div class="logotypes_item container">
+        <div class="logotypes_item container" data-aos="fade-up" data-aos-duration="700">
           <div class="logotypes_left">
             <img src="images/logotype_3.jpg" alt="Название логотипа">
           </div>
@@ -303,22 +296,22 @@
       </div>
     </section>
     <section class="polygraphy">
-      <h2>Разрабатываю полиграфию</h2>
+      <h2 data-aos="fade-up" data-aos-duration="700">Разрабатываю полиграфию</h2>
       <div class="polygraphy_list">
         <div class="polygraphy_item container">
-          <div class="polygraphy_left">
+          <div class="polygraphy_left" data-aos="fade-up" data-aos-duration="700">
             <img src="images/polygraphy_1.jpg" alt="Название полиграфии">
           </div>
           <div class="polygraphy_right"></div>
         </div>
         <div class="polygraphy_item container">
           <div class="polygraphy_left"></div>
-          <div class="polygraphy_right">
+          <div class="polygraphy_right" data-aos="fade-up" data-aos-duration="700">
             <img src="images/polygraphy_2.jpg" alt="Название полиграфии">
           </div>
         </div>
         <div class="polygraphy_item container">
-          <div class="polygraphy_left one_col">
+          <div class="polygraphy_left one_col" data-aos="fade-up" data-aos-duration="700">
             <img src="images/polygraphy_3.jpg" alt="Название полиграфии">
           </div>
           <div class="polygraphy_right"></div>
@@ -326,29 +319,31 @@
       </div>
     </section>
     <section class="brandbook">
-      <h2>Разрабатываю брендбуки</h2>
-      <div class="brandbook_container">
+      <h2 data-aos="fade-up" data-aos-duration="700">Разрабатываю брендбуки</h2>
+      <div class="brandbook_container" data-aos="fade-up" data-aos-duration="700">
         <img src="images/brandbook.jpg" alt="Название брендбука">
       </div>
     </section>
     <section class="about container">
       <div class="about_left">
-        <h2>Я дизайнер, который всегда чему-то учится</h2>
-        <p>Это касается не только работы, но моих личных навыков. Моё хобби — саморазвитие.</p>
+        <h2 data-aos="fade-up" data-aos-duration="700">Я дизайнер, который всегда чему-то учится</h2>
+        <p data-aos="fade-up" data-aos-duration="700">Это касается не только работы, но моих личных навыков. Моё хобби — саморазвитие.</p>
       </div>
       <div class="about_right">
-        <img src="./images/about.jpg" alt="">
-        <h2>Моя цель и мечта</h2>
-        <p>Моя цель — создавать как можно больше понятных и эстетичных интерфейсов, поэтому я мечтаю работать в компании с классной дизайн-культурой. В компании, где команда не просто любит то, что делает, а, в буквальном смысле, улучшает этот мир: делает удобные, человечные и красивые продукты.</p>
-        <p>Хочу вместе с такой командой заботиться о конечных пользователях, помогать людям быстрее и проще решить свои задачи. В такой команде я вижу свои зоны роста и возможность реализовать свой потенциал.</p>
+        <div class="about_img" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+          <img src="./images/about.jpg" alt="Какое-то описание">
+        </div>
+        <h2 data-aos="fade-up" data-aos-duration="700">Моя цель и мечта</h2>
+        <p data-aos="fade-up" data-aos-duration="700">Моя цель — создавать как можно больше понятных и эстетичных интерфейсов, поэтому я мечтаю работать в компании с классной дизайн-культурой. В компании, где команда не просто любит то, что делает, а, в буквальном смысле, улучшает этот мир: делает удобные, человечные и красивые продукты.</p>
+        <p data-aos="fade-up" data-aos-duration="700">Хочу вместе с такой командой заботиться о конечных пользователях, помогать людям быстрее и проще решить свои задачи. В такой команде я вижу свои зоны роста и возможность реализовать свой потенциал.</p>
       </div>
     </section>
     <section class="reviews">
       <div class="hgroup">
-        <h2>Что обо мне говорят</h2>
-        <p>Мои любимые клиенты, с которыми давно работаем</p>
+        <h2 data-aos="fade-up" data-aos-duration="700">Что обо мне говорят</h2>
+        <p data-aos="fade-up" data-aos-duration="700">Мои любимые клиенты, с которыми давно работаем</p>
       </div>
-      <div class="reviews_list dragscroll">
+      <div class="reviews_list" id="reviews_list" data-aos="fade-up" data-aos-duration="700">
         <div class="reviews_item">
           <video src="./videos/Вячеслав_Генеральный директор ООО «Барриал».mp4" poster="./images/polygraphy_1.jpg"></video>
         </div>
@@ -357,16 +352,6 @@
         </div>
         <div class="reviews_item">
           <video src="./videos/Вячеслав_Генеральный директор ООО «Барриал».mp4" poster="./images/polygraphy_3.jpg"></video>
-        </div>
-      </div>
-    </section>
-    <section class="short">
-      <div class="container">
-        <div class="short_left"></div>
-        <div class="short_right">
-          <img src="./images/short.jpg" alt="Какое-то описание">
-          <h2>Если коротко, то разработаю продукт с нуля: от идеи<br> до конечной упаковки</h2>
-          <p>Проведу исследование, разработаю структуру и визуал на разных носителях, помогу с текстом, подготовлю к фотосъёмке, подготовлю макеты для печати и для разработчиков.</p>
         </div>
       </div>
     </section>

@@ -235,16 +235,27 @@ header {
 /* Marathons */
 .marathons_left {
   grid-column: 1 / 3;
+  overflow: hidden;
 }
 
 .marathons_right {
   grid-column: 3 / -1;
+  overflow: hidden;
 }
 
 .marathons_item img {
   display: block;
   width: 100%;
   object-fit: contain;
+}
+
+.marathons_item .aos-init img {
+  transform: scale(1.5);
+  transition: transform .7s ease .2s;
+}
+
+.marathons_item .aos-init.aos-animate img {
+  transform: scale(1);
 }
 /* /Marathons */
 
@@ -312,10 +323,12 @@ header {
 
 .logotypes_left {
   grid-column: 1 / 3;
+  overflow: hidden;
 }
 
 .logotypes_right {
   grid-column: 3 / -1;
+  overflow: hidden;
 }
 
 .logotypes_list img {
@@ -323,16 +336,27 @@ header {
   width: 100%;
   object-fit: contain;
 }
+
+.logotypes_list .aos-init img {
+  transform: scale(1.5);
+  transition: transform .7s ease .2s;
+}
+
+.logotypes_list .aos-init.aos-animate img {
+  transform: scale(1);
+}
 /* /Logotypes */
 
 /* Polygraphy */
 .polygraphy_left {
   grid-column: 1 / 4;
   justify-self: end;
+  overflow: hidden;
 }
 
 .polygraphy_right {
   grid-column: 4 / -1;
+  overflow: hidden;
 }
 
 .polygraphy_list img {
@@ -340,6 +364,15 @@ header {
   max-width: 100%;
   object-fit: contain;
   object-position: right;
+}
+
+.polygraphy_list .aos-init img {
+  transform: scale(1.5);
+  transition: transform .7s ease .2s;
+}
+
+.polygraphy_list .aos-init.aos-animate img {
+  transform: scale(1);
 }
 /* /Polygraphy */
 
@@ -365,11 +398,25 @@ header {
 
 .about_right {
   grid-column: 3 / -1;
+  overflow: hidden;
+}
+
+.about_img {
+  overflow: hidden;
 }
 
 .about_right img {
   display: block;
   width: 100%;
+}
+
+.about_right .aos-init img {
+  transform: scale(1.5);
+  transition: transform 2s ease .5s;
+}
+
+.about_right .aos-init.aos-animate img {
+  transform: scale(1);
 }
 
 .about_right h2 {
@@ -420,7 +467,7 @@ header {
   width: 32%;
   height: 32%;
   transform: translate(-50%, -50%);
-  background: url('/images/icons/play.svg') no-repeat center/contain transparent;
+  background: url('../images/icons/play.svg') no-repeat center/contain transparent;
   border-radius: 50%;
   box-shadow: 0 0 80px #0000007a;
 }
@@ -504,3 +551,10 @@ footer {
 }
 
 /* Footer */
+
+/* Custom aos animation */
+html:not(.no-js) [data-aos=fade-up-20] {
+  -webkit-transform:translate3d(0,20px,0);
+  transform:translate3d(0,20px,0)
+}
+/* /Custom aos animation */

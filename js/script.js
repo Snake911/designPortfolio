@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  AOS.init();
   //Бургерное меню
   const header_burger = document.querySelector('.header_burger');
   const burger_close = document.querySelector('.burger_close');
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav: false,
       controlsContainer: '.project_slider-nav',
       loop: false,
-      // mouseDrag: true,
+      speed: 1000
     });
   }
 
@@ -77,5 +78,5 @@ document.addEventListener('DOMContentLoaded', () => {
     trainingHide.classList.remove('hidden');
     trainingMore.classList.add('hidden');
     trainingHide.addEventListener('click', hideTraining);
-  } 
+  }
 });
