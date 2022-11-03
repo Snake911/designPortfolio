@@ -203,6 +203,7 @@ header {
 
 .project_tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   margin-top: 16px;
 }
@@ -527,27 +528,27 @@ footer {
 }
 
 .soc_item.telegram {
-  background-image: url('/images/icons/telegram.svg');
+  background-image: url('../images/icons/telegram.svg');
 }
 
 .soc_item.vk {
-  background-image: url('/images/icons/vk.svg');
+  background-image: url('../images/icons/vk.svg');
 }
 
 .soc_item.now {
-  background-image: url('/images/icons/now.svg');
+  background-image: url('../images/icons/now.svg');
 }
 
 .soc_item.behance {
-  background-image: url('/images/icons/behance.svg');
+  background-image: url('../images/icons/behance.svg');
 }
 
 .soc_item.dribbble {
-  background-image: url('/images/icons/dribbble.svg');
+  background-image: url('../images/icons/dribbble.svg');
 }
 
 .soc_item.pinterest {
-  background-image: url('/images/icons/pinterest.svg');
+  background-image: url('../images/icons/pinterest.svg');
 }
 
 /* Footer */

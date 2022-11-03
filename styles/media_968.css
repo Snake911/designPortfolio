@@ -174,7 +174,7 @@
 .training_more, 
 .training_hide {
   margin-top: 40px;
-  grid-column: 2;
+  grid-column: 1 / -1;
   text-align: center;
 }
 /* /Trainings */
