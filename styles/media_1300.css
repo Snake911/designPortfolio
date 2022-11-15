@@ -12,3 +12,19 @@
   min-width: 363px;
 }
 /* /Reviews */
+/* Footer */
+footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.footer_logo {
+  height: 40px;
+  margin-bottom: 64px;
+}
+
+.soc_item {
+  width: 40px;
+  height: 40px;
+}
+/* Footer */

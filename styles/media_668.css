@@ -61,18 +61,28 @@ section {
 /* /Projects */
 
 /* Footer */
-.contact_phone {
-  font-size: 1.5rem;
+footer {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.footer_left,
+.footer_right {
+  grid-column: 1 / -1;
+}
+
+.footer_right {
+  margin-top: 96px;
+}
+
+.contact_phone,
+.contact_email {
+  font-size: 18px;
 }
 
 .soc_list {
   grid-auto-flow: row;
-  grid-template-columns: repeat(3, 56px);
+  grid-template-columns: repeat(3, 40px);
   gap: 24px;
-}
-
-.soc_item {
-  width: 56px;
-  height: 56px;
 }
 /* Footer */
