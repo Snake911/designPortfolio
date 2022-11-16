@@ -5,6 +5,7 @@
   font-size: 24px;
   color: var(--color-primary);
   line-height: 1.2;
+  font-family: sans-serif;
 }
 
 * {
@@ -250,12 +251,12 @@ header {
   object-fit: contain;
 }
 
-.marathons_item .aos-init img {
-  transform: scale(1.5);
+.marathons_item:first-child .aos-init img {
+  transform: scale(1.1);
   transition: transform .7s ease .2s;
 }
 
-.marathons_item .aos-init.aos-animate img {
+.marathons_item:first-child .aos-init.aos-animate img {
   transform: scale(1);
 }
 /* /Marathons */
@@ -338,12 +339,12 @@ header {
   object-fit: contain;
 }
 
-.logotypes_list .aos-init img {
-  transform: scale(1.5);
+.logotypes_item:first-child.aos-init img {
+  transform: scale(1.1);
   transition: transform .7s ease .2s;
 }
 
-.logotypes_list .aos-init.aos-animate img {
+.logotypes_item:first-child.aos-init.aos-animate img {
   transform: scale(1);
 }
 /* /Logotypes */
@@ -367,12 +368,12 @@ header {
   object-position: right;
 }
 
-.polygraphy_list .aos-init img {
-  transform: scale(1.5);
+.polygraphy_item:first-child .aos-init img {
+  transform: scale(1.1);
   transition: transform .7s ease .2s;
 }
 
-.polygraphy_list .aos-init.aos-animate img {
+.polygraphy_item:first-child .aos-init.aos-animate img {
   transform: scale(1);
 }
 /* /Polygraphy */
@@ -412,8 +413,8 @@ header {
 }
 
 .about_right .aos-init img {
-  transform: scale(1.5);
-  transition: transform 2s ease .5s;
+  transform: scale(1.1);
+  transition: transform 1s ease .5s;
 }
 
 .about_right .aos-init.aos-animate img {
