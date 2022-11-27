@@ -13,6 +13,7 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   letter-spacing: 0.02em;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -125,6 +126,10 @@ header {
 /* /Header */
 
 /* Main page */
+.main_page {
+  overflow: auto hidden;
+}
+
 .main_page h1 {
   padding: 100px 0 63px;
 }
@@ -397,6 +402,7 @@ header {
 /* Brandbook*/
 .brandbook_container {
   aspect-ratio: 2 / 1;
+  position: relative;
   overflow: hidden;
 }
 
@@ -443,13 +449,13 @@ header {
 }
 
 .hgroup {
- margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .reviews_list {
   display: flex;
   gap: 32px;
-  overflow: auto;
+  overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }

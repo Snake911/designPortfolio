@@ -79,4 +79,44 @@ document.addEventListener('DOMContentLoaded', () => {
     trainingMore.classList.add('hidden');
     trainingHide.addEventListener('click', hideTraining);
   }
+
+  document.getElementById('brandbook').addEventListener('load', function(e) {
+    const brandbook = e.currentTarget;
+    let directionID = move_up(brandbook);
+    let direction = 'up';
+    brandbook.addEventListener('mouseenter', function() {      
+      clearInterval(directionID);      
+    });
+
+    brandbook.addEventListener('mouseleave', function() {
+      if(direction === 'up') {
+        directionID = move_up(brandbook);
+      } else {
+        directionID = move_down(brandbook);
+      }
+    });
+
+    function move_up(element) {
+      return setInterval(() => {
+        console.log(element.offsetTop)
+        element.style.top = element.offsetTop - 50 + 'px';
+        if(-element.offsetTop + element.parentElement.offsetHeight >= element.offsetHeight) {
+          clearInterval(directionID);
+          direction = 'down';
+          directionID = move_down(element);
+        }
+      }, 50);
+    }
+  
+    function move_down(element) {
+      return setInterval(() => {
+        element.style.top = element.offsetTop + 50 + 'px';
+        if(Math.abs(element.offsetTop) <= 0) {
+          clearInterval(directionID);
+          direction = 'up';
+          directionID = move_up(element);
+        }
+      }, 50);
+    }
+  }); 
 });
