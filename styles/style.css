@@ -452,17 +452,26 @@ header {
   margin-bottom: 40px;
 }
 
+.reviews {
+  position: relative;
+  overflow: hidden;
+}
+
 .reviews_list {
   display: flex;
   gap: 32px;
-  overflow: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  position: relative;
+  overflow: auto;
+  scrollbar-width: 0px;
 }
 
 .reviews_list::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+
+.reviews .hgroup:not(:first-child) {
+  margin-top: 64px;
 }
 
 .reviews_item {
@@ -599,3 +608,464 @@ html:not(.no-js) [data-aos=fade-up-20] {
   transform:translate3d(0,20px,0)
 }
 /* /Custom aos animation */
+
+@media (max-width: 1480px) {
+  /* Footer */
+  .contact_phone,
+  .contact_email {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .footer_right .soc_list {
+    margin-top: 0px;
+  }
+  /* /Footer */
+}
+
+@media (max-width: 1300px) {
+  .header_menu {
+    gap: 45px;
+  }
+  
+  /* Projects */
+  .project_item > img {
+    height: 600px;
+  }
+  /* /Projects */
+  /* Reviews */
+  .reviews_item {
+    min-width: 363px;
+  }
+  /* /Reviews */
+  /* Footer */
+  footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .footer_logo {
+    height: 40px;
+    margin-bottom: 64px;
+  }
+  
+  .soc_item {
+    width: 40px;
+    height: 40px;
+  }
+  /* Footer */
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 64px;  
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 40px;
+    margin-bottom: 64px;
+  }
+  
+  h3, .h3 {
+    font-size: 24px;
+  }
+  
+  section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .container {
+    gap: 0 24px;
+  }
+  
+  /* Header */
+  .header_logo img {
+    height: 40px;
+  }
+  
+  .header_menu {
+    gap: 40px;
+  }
+  /* /Header */
+  
+  /* Main page */
+  .main_page h1 {
+    padding: 80px 0 64px;
+  }
+  
+  .main_info-left {
+    gap: 24px;
+  }
+  
+  .main_photo img {
+    width: 80px;
+    height: 80px;
+  }
+  /* /Main page */
+  /* Projects */
+  .experience_list {
+    margin-top: 64px;
+  }
+  
+  .project_item > img {
+    height: 406px;
+  }
+  /* /Projects */
+  /* Trainings */
+  .training_img {
+    margin-left: 16px;
+  }
+  /* /Trainings */
+  /* Short */
+  .short_right img {
+    width: 80px;
+  }
+  /* /Short */
+}
+
+@media (max-width: 968px) {
+  .limiter {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 8px;
+  }
+  
+  /* Burger */
+  .burger_content {
+    display: block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    overflow: auto;
+  }
+  
+  .burger_content.active {
+    right: 0;
+  }
+  
+  .burger_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .burger_logo img {
+    height: 60px;
+    width: 100%;
+    display: block;
+    object-fit: contain;
+  }
+  
+  .burger_close {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .burger_close::before,
+  .burger_close::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--color-accent);
+    position: absolute;
+    top: calc(50% - 2px);
+    transform: rotate(45deg);
+  }
+  
+  .burger_close::after {
+    transform: rotate(-45deg);
+  }
+  
+  .burger_menu {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: grid;
+    gap: 40px;
+  }
+  
+  .burger_contacts {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: grid;
+    gap: 24px;
+  }
+  /* /Burger */
+  /* Header */
+  .header_logo {
+    grid-column: 1 / -2;
+  }
+  
+  .header_nav {
+    display: none;
+  }
+  
+  .header_burger {
+    display: block;
+    width: 40px;
+    height: 28px;
+    background: url('../images/icons/burger.svg') no-repeat center/contain transparent;
+    border: none;
+    cursor: pointer;
+    grid-column: -2 / -1;
+    justify-self: end;
+  }
+  /* /Header */
+  /* Projects */
+  .projects_left,
+  .projects_right {
+    grid-column: 1 / -1;
+  }
+  
+  .project_slider-nav {
+    padding-bottom: 0px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  /* /Projects */
+  /* Experience */
+  .experience_list {
+    margin-top: 40px;
+  }
+  
+  .experience_item:not(:last-child) {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #dedede;
+  }
+  
+  .experience_left {
+    grid-column: 1 / -1;
+  }
+  
+  .experience_right {
+    grid-column: 1 / -1;
+    margin-top: 8px;
+  }
+  
+  /* /Experience */
+  /* Marathons */
+  .marathons_item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  
+  .marathons_left {
+    grid-column: 1 / 3;
+  }
+  
+  .marathons_right {
+    grid-column: 2 / -1;
+  }
+  /* /Marathons */
+  /* Trainings */
+  .training_list {
+    gap: 40px;
+  }
+  
+  .training_item {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #dedede;
+  }
+  
+  .training_left,
+  .training_right {
+    grid-column: 1 / -1;
+  }
+  
+  .training_right {
+    margin-top: 32px;
+  }
+  
+  .training_img {
+    display: none;
+  }
+  
+  .training_more, 
+  .training_hide {
+    margin-top: 40px;
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+  /* /Trainings */
+  /* Logotypes */
+  .logotypes_item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  
+  .logotypes_left {
+    grid-column: 1 / 3;
+  }
+  
+  .logotypes_right {
+    grid-column: 2 / -1;
+  }
+  /* Logotypes */
+  /* Polygraphy */
+  .polygraphy_item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  
+  .polygraphy_left {
+    grid-column: 1 / 3;
+    justify-self: start;
+  }
+  
+  .polygraphy_right {
+    grid-column: 2 / -1;
+  }
+  
+  .one_col {
+    grid-column: 1 / 2;
+  }
+  /* /Polygraphy */
+  
+  /* About */
+  .about_left {
+    grid-column: 1 / -1;
+  }
+  
+  .about_left h2 {
+    margin-bottom: 16px;
+  }
+  
+  .about_right {
+    margin-top: 40px;
+    grid-column: 1 / -1;
+  }
+  
+  .about_right h2 {
+    margin-bottom: 16px;
+  }
+  
+  .about_right p:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  /* /About */
+  /* Reviews */
+  .reviews_item {
+    min-width: 300px;
+  }
+  /* /Reviews */
+  /* Short */
+  .short_left {
+    display: none;
+  }
+  .short_right {
+    grid-column: 1 / -1;
+  }
+  /* /Short */
+}
+
+@media (max-width: 668px) {
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  h3, .h3 {
+    font-size: 18px;
+  }
+  
+  section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  
+  /* Burger */
+  .burger_logo img {
+    height: 32px;
+  }
+  /* /Burger */
+  
+  /* Header */
+  .header_logo img {
+    height: 32px;
+  }
+  /* Header */
+  
+  /* Main page */
+  .main_page h1 {
+    padding: 48px 0 40px;
+  }
+  
+  .main_info {
+    gap: 40px;
+  }
+  
+  .main_info-left,
+  .main_info-right {
+    grid-column: 1 / -1;
+  }
+  
+  .main_info-left {
+    order: 1;
+  }
+  
+  .main_photo {
+    margin-right: 16px;
+  }
+  /* /Main page */
+  /* Projects */
+  .projects_left h2 {
+    margin-bottom: 16px;
+  }
+  
+  .project_item > img {
+    height: 220px;
+  }
+  /* /Projects */
+  
+  /* Footer */
+  footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  
+  .footer_left,
+  .footer_right {
+    grid-column: 1 / -1;
+  }
+  
+  .footer_right {
+    margin-top: 96px;
+  }
+  
+  .contact_phone,
+  .contact_email {
+    font-size: 18px;
+  }
+  
+  .soc_list {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 40px);
+    gap: 24px;
+  }
+  /* Footer */
+}

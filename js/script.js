@@ -79,44 +79,31 @@ document.addEventListener('DOMContentLoaded', () => {
     trainingMore.classList.add('hidden');
     trainingHide.addEventListener('click', hideTraining);
   }
-
-  document.getElementById('brandbook').addEventListener('load', function(e) {
-    const brandbook = e.currentTarget;
-    let directionID = move_up(brandbook);
-    let direction = 'up';
-    brandbook.addEventListener('mouseenter', function() {      
-      clearInterval(directionID);      
-    });
-
-    brandbook.addEventListener('mouseleave', function() {
-      if(direction === 'up') {
-        directionID = move_up(brandbook);
-      } else {
-        directionID = move_down(brandbook);
-      }
-    });
-
-    function move_up(element) {
-      return setInterval(() => {
-        console.log(element.offsetTop)
-        element.style.top = element.offsetTop - 50 + 'px';
-        if(-element.offsetTop + element.parentElement.offsetHeight >= element.offsetHeight) {
-          clearInterval(directionID);
-          direction = 'down';
-          directionID = move_down(element);
-        }
-      }, 50);
-    }
   
-    function move_down(element) {
-      return setInterval(() => {
-        element.style.top = element.offsetTop + 50 + 'px';
-        if(Math.abs(element.offsetTop) <= 0) {
-          clearInterval(directionID);
-          direction = 'up';
-          directionID = move_up(element);
-        }
-      }, 50);
-    }
-  }); 
+  // const lists = document.querySelectorAll('.reviews_list');
+  // const html = document.querySelector('html');
+  // document.addEventListener('scroll', function(event) {
+  //   lists.forEach(function(list, index) {
+  //     const bottom = list.getBoundingClientRect().bottom - list.getBoundingClientRect().height;
+  //     var scrollPosition = [
+  //       self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
+  //       self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
+  //     ];
+  //     if(/*list.scrollLeft >= 0 && list.scrollLeft + list.clientWidth < list.scrollWidth*/ bottom < 0) {        
+  //       html.style.overflow = 'hidden';
+  //       window.scrollTo(scrollPosition[0], scrollPosition[1]);
+  //     } else {
+  //       html.style.overflow = 'initial';
+  //       window.scrollTo(scrollPosition[0], scrollPosition[1]);
+  //     }
+  
+  //     if(list.scrollLeft > 0 && event.deltaY < 0) {
+  //       event.preventDefault();
+  //     }
+      
+  //     list.scrollBy({
+  //       left: event.deltaY * 2
+  //     });
+  //   });
+  // }); 
 });
