@@ -79,6 +79,30 @@ document.addEventListener('DOMContentLoaded', () => {
     trainingMore.classList.add('hidden');
     trainingHide.addEventListener('click', hideTraining);
   }
+
+  //видео
+  const videos = document.querySelectorAll('video');
+  videos.forEach((video) => {
+    video.addEventListener('click', function() {
+      if(video.paused) {
+        videos.forEach((otherVideo) => {
+          if(!otherVideo.paused) {
+            otherVideo.pause();
+            otherVideo.parentElement.classList.remove('played');
+          }
+        });
+        video.play();
+        video.parentElement.classList.add('played');
+      } else {        
+        video.pause();
+        video.parentElement.classList.remove('played');
+      }
+    });
+    
+    video.addEventListener('ended', function() {
+      video.parentElement.classList.remove('played');
+    });
+  });
   
   // const lists = document.querySelectorAll('.reviews_list');
   // const html = document.querySelector('html');
