@@ -220,8 +220,8 @@ header {
   grid-column: 3 / -1;
 }
 
-.project_item > img,
-.project .projects_right > img {
+.project_item img,
+.project .projects_right img {
   display: block;
   width: 100%;
   height: 760px;
@@ -662,8 +662,8 @@ html:not(.no-js) [data-aos=fade-up-20] {
   }
   
   /* Projects */
-  .project_item > img,
-  .project .projects_right > img  {
+  .project_item img,
+  .project .projects_right img  {
     height: 600px;
   }
   /* /Projects */
@@ -754,8 +754,8 @@ html:not(.no-js) [data-aos=fade-up-20] {
     margin-top: 64px;
   }
   
-  .project_item > img,
-  .project .projects_right > img  {
+  .project_item img,
+  .project .projects_right img  {
     height: 406px;
   }
   /* /Projects */
@@ -1083,8 +1083,8 @@ html:not(.no-js) [data-aos=fade-up-20] {
     margin-bottom: 16px;
   }
   
-  .project_item > img,
-  .project .projects_right > img  {
+  .project_item img,
+  .project .projects_right img  {
     height: 220px;
   }
   /* /Projects */
