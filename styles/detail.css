@@ -1,0 +1,79 @@
+h1 {
+  margin-bottom: 120px;
+}
+
+.hgroup {
+  margin-bottom: 80px;
+}
+
+.project_page img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.three_column-left {
+  grid-column: 1 / 4;
+}
+
+.three_column-right {
+  grid-column: 3 / -1;
+}
+
+.two_column-left {
+  grid-column: 1 / 3;
+}
+
+.two_column-right {
+  grid-column: 4 / -1;
+}
+
+.five_column {
+  grid-column: 1 / -1;
+  margin-top: 80px;
+}
+
+.project_cover {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+.about_project .container:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.avatar_project {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.container p:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.other_project h2 {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 968px) {
+  .three_column-left {
+    grid-column: 1 / 3;
+  }
+  
+  .three_column-right {
+    grid-column: 2 / -1;
+  }
+  
+  .two_column-left {
+    grid-column: 1 / 2;
+  }
+  
+  .two_column-right {
+    grid-column: 3 / -1;
+  }
+}

@@ -459,7 +459,7 @@ header {
 }
 /* /About */
 /* Reviews */
-.hgroup h2 {
+.hgroup h2:not(:last-child) {
   margin-bottom: 16px;
 }
 
