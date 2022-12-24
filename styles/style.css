@@ -24,7 +24,7 @@ h1 {
   letter-spacing: normal;
 }
 
-h2 {
+h2, .h2 {
   font-size: 64px;
   font-family: 'Manrope', sans-serif;
   font-weight: 800;
@@ -224,8 +224,8 @@ header {
 .project .projects_right img {
   display: block;
   width: 100%;
-  height: 760px;
   object-fit: cover;
+  max-height: 706px;
 }
 
 .project_item h3 {
@@ -467,6 +467,22 @@ header {
   margin-bottom: 40px;
 }
 
+.hlink .h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.hlink .h2::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 16px;
+  background: url('../images/icons/arrow.svg') no-repeat center/contain transparent;
+}
+
 .reviews {
   position: relative;
   overflow: hidden;
@@ -660,13 +676,6 @@ html:not(.no-js) [data-aos=fade-up-20] {
   .header_menu {
     gap: 45px;
   }
-  
-  /* Projects */
-  .project_item img,
-  .project .projects_right img  {
-    height: 600px;
-  }
-  /* /Projects */
   /* Reviews */
   .reviews_item {
     min-width: 363px;
@@ -700,7 +709,7 @@ html:not(.no-js) [data-aos=fade-up-20] {
     line-height: 1.2;
   }
   
-  h2 {
+  h2, .h2 {
     font-size: 40px;
     margin-bottom: 64px;
   }
@@ -753,11 +762,7 @@ html:not(.no-js) [data-aos=fade-up-20] {
   .experience_list {
     margin-top: 64px;
   }
-  
-  .project_item img,
-  .project .projects_right img  {
-    height: 406px;
-  }
+
   /* /Projects */
   /* Trainings */
   .training_img {
@@ -1026,7 +1031,7 @@ html:not(.no-js) [data-aos=fade-up-20] {
     font-size: 40px;
   }
   
-  h2 {
+  h2, .h2 {
     font-size: 32px;
     margin-bottom: 40px;
   }
@@ -1077,16 +1082,12 @@ html:not(.no-js) [data-aos=fade-up-20] {
   /* /Main page */
   /* Projects */
   .projects_heading {
-    margin-bottom: 0px;
+    margin-bottom: 16px;
   } 
   .projects_left h2 {
     margin-bottom: 16px;
   }
-  
-  .project_item img,
-  .project .projects_right img  {
-    height: 220px;
-  }
+
   /* /Projects */
   
   /* Footer */

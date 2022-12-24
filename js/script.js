@@ -35,18 +35,26 @@ document.addEventListener('DOMContentLoaded', () => {
   //Переносим стрелки в конец блока проекты
   if(window.outerWidth < 968) {
     const sliderNav = document.querySelector('.project_slider-nav');
-    sliderNav.before(document.querySelector('.projects_right'));
+    if(sliderNav) {
+      sliderNav.before(document.querySelector('.projects_right'));
+    }    
   } else {
     const projectLeft = document.querySelector('.projects_left');
-    projectLeft.after(document.querySelector('.projects_right'))
+    if(projectLeft) {
+      projectLeft.after(document.querySelector('.projects_right'));
+    }    
   }
   window.addEventListener('resize', function() {
     if(window.outerWidth < 968) {
       const sliderNav = document.querySelector('.project_slider-nav');
-      sliderNav.before(document.querySelector('.projects_right'));
+      if(sliderNav) {
+        sliderNav.before(document.querySelector('.projects_right'));
+      } 
     } else {
       const projectLeft = document.querySelector('.projects_left');
-      projectLeft.after(document.querySelector('.projects_right'))
+      if(projectLeft) {
+        projectLeft.after(document.querySelector('.projects_right'));
+      } 
     }
   });
 
